@@ -20,6 +20,11 @@
           "hostPort": 80,
           "protocol": "tcp",
           "containerPort": 80
+        },
+        {
+          "hostPort": 443,
+          "protocol": "tcp",
+          "containerPort": 443
         }
       ],
       "command": [],
@@ -37,7 +42,7 @@
       "memoryReservation": 350,
       "volumesFrom": [],
       "stopTimeout": null,
-      "image": "575611830994.dkr.ecr.us-west-2.amazonaws.com/r-ecr:latest",
+      "image": "575611830994.dkr.ecr.us-west-2.amazonaws.com/r-ecr:8cec586",
       "startTimeout": null,
       "firelensConfiguration": null,
       "dependsOn": null,
@@ -64,7 +69,7 @@
     "EC2",
     "FARGATE"
   ],
-  "taskDefinitionArn": "arn:aws:ecs:us-west-2:575611830994:task-definition/r-test:8",
+  "taskDefinitionArn": "arn:aws:ecs:us-west-2:575611830994:task-definition/r-test:10",
   "family": "r-test",
   "requiresAttributes": [
     {
@@ -132,10 +137,9 @@
     "cpuArchitecture": null
   },
   "cpu": "1024",
-  "revision": 8,
+  "revision": 10,
   "status": "ACTIVE",
   "inferenceAccelerators": null,
   "proxyConfiguration": null,
   "volumes": []
 }
-
